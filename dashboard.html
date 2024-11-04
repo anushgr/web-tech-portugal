@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Portugal</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="nav-container">
+        <a href="#" class="logo">Visit Portugal</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+        </div>
+        <div class="auth-buttons">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Sign Up</button>
+        </div>
+        <button class="menu-btn">☰</button>
+      </div>
+    </nav>
+
+    <div class="header">
+      <h1>Discover Portugal</h1>
+      <p>Experience the beauty, culture, and history</p>
+    </div>
+
+    <nav class="nav">
+      <select id="citySelect">
+        <option value="lisbon">Lisbon</option>
+        <option value="porto">Porto</option>
+        <option value="algarve">Algarve</option>
+      </select>
+    </nav>
+
+    <div class="container">
+      <div class="weather-widget" id="weatherWidget">
+        <h2>Current Weather</h2>
+        <p id="weatherInfo">Loading weather information...</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" id="attractionsTab">Attractions</button>
+        <button class="tab active" id="restaurantsTab">Restaurants</button>
+        <button class="tab active" id="EventsTab">Events</button>
+      </div>
+
+      <div class="content" id="mainContent">
+        <!-- Content will be loaded here -->
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
